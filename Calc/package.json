@@ -1,0 +1,11 @@
+{
+  "name": "Calculator",
+  "version": "1.0.1",
+  "description": "Calculator challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "(mocha)"
+  },
+  "author": "Carlo De Gregorio",
+  "license": "MIT"
+}
