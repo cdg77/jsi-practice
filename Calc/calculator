@@ -38,8 +38,11 @@ if (program.add) {
 	
 	var x = program.args[0];
 	var y = program.args[1];
-	var sum = calculations.add(parseInt(program.args[0], parseInt(program.args[1])));
-	
+	var sum = calculations.add(parseInt(x), parseInt(y));
+
+	console.log(parseInt(program.args[0]));
+	console.log(parseInt(program.args[1]));
+	console.log(sum);
 	console.log('The sum of ' + x +
 		' and ' + y +
 		' is ' + sum);
