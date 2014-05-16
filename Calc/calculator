@@ -1,0 +1,5 @@
+#!/usr/bin/env node
+
+var calculations = require(_.calculations);
+
+console.log('The sum is ' + calculations.add(1, 3));

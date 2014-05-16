@@ -7,5 +7,11 @@
     "test": "(mocha)"
   },
   "author": "Carlo De Gregorio",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.2.0"
+  },
+  "devDependencies": {
+    "chai": "^1.9.1"
+  }
 }
