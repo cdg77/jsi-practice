@@ -47,5 +47,19 @@ if (program.add) {
 		' and ' + y +
 		' is ' + sum);
 }
+
+if (program.subtract) {
+	
+	var x = program.args[0];
+	var y = program.args[1];
+	var diff = calculations.subtract(parseInt(x), parseInt(y));
+
+	console.log(parseInt(program.args[0]));
+	console.log(parseInt(program.args[1]));
+	console.log(diff);
+	console.log('The difference of ' + x +
+		' and ' + y +
+		' is ' + diff);
+}
 // console.log(parseInt(program.args, 10));
 // console.log(parseInt(program.args[0]) + parseInt(program.args[1]));
