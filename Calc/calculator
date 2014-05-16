@@ -1,0 +1,86 @@
+#!/usr/bin/env node
+
+var calculations = require('./calculations');
+
+// console.log('The sum is ' + calculations.add(1, 3));
+
+
+/**
+ * Module dependencies.
+ */
+console.log(process.argv);
+
+var program = require('commander');
+
+// program
+//   .version('0.0.1')
+//   .option('-p, --peppers', 'Add peppers')
+//   .option('-P, --pineapple', 'Add pineapple')
+//   .option('-b, --bbq', 'Add bbq sauce')
+//   .option('-c, --cheese [type]', 'Add the specified type of cheese [marble]', 'marble')
+//   .parse(process.argv);
+
+// console.log('you ordered a pizza with:');
+// if (program.peppers) console.log('  - peppers');
+// if (program.pineapple) console.log('  - pineapple');
+// if (program.bbq) console.log('  - bbq');
+// console.log('  - %s cheese', program.cheese);
+// console.log(program.args);
+
+program
+  .version('0.0.1')
+  .option('-a, --add', 'Add ')
+  .option('-s, --subtract', 'Subtract ')
+  .option('-m, --multiply', 'Multiply ')
+  .option('-d, --divide', 'Divide ')
+  .option('-ex, --exponent', 'Exponent ')
+  .option('-s, --subtract', 'Subtract ')
+  .option('-s, --subtract', 'Subtract ')
+  .parse(process.argv);
+
+console.log('Running calculation:');
+if (program.add) {
+	
+	var x = program.args[0];
+	var y = program.args[1];
+	var sum = calculations.add(parseInt(x), parseInt(y));
+
+	console.log(parseInt(program.args[0]));
+	console.log(parseInt(program.args[1]));
+	console.log(sum);
+	console.log('The sum of ' + x +
+		' and ' + y +
+		' is ' + sum);
+}
+
+if (program.subtract) {
+	
+	var x = program.args[0];
+	var y = program.args[1];
+	var diff = calculations.subtract(parseInt(x), parseInt(y));
+
+	console.log(parseInt(program.args[0]));
+	console.log(parseInt(program.args[1]));
+	console.log(diff);
+	console.log('The difference of ' + x +
+		' and ' + y +
+		' is ' + diff);
+}
+
+if (program.multiply) {
+	
+	var x = program.args[0];
+	var y = program.args[1];
+	var mult = calculations.multiply(parseInt(x), parseInt(y));
+
+	console.log(parseInt(program.args[0]));
+	console.log(parseInt(program.args[1]));
+	console.log(mult);
+	console.log('The product of ' + x +
+		' and ' + y +
+		' is ' + mult);
+}
+
+
+// console.log(parseInt(program.args, 10));
+// console.log(parseInt(program.args[0]) + parseInt(program.args[1]));
